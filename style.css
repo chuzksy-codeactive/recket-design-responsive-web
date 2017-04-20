@@ -15,7 +15,7 @@
 body{
     background-color: #F5F5F5;
     color: #67727a;
-    font-family: "Algegreya Sans", sans-serif;
+    font-family: 'Alegreya Sans', sans-serif;
     margin: 0;
 }
 
@@ -24,6 +24,7 @@ h2{
     font-weight: 700;
     text-align: center;
     padding-top: 2%;
+    color: #F5F5F5; 
 }
 
 h3{
@@ -31,10 +32,13 @@ h3{
     line-height: 155%;
     padding: 5% 0;
     font-weight: 400;
+    color: #F5F5F5;
 }
 
 p{
-    font-size: 160%;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #F5F5F5;
+    font-size: 120%;
     line-height: 150%;
     padding: 3%;
     text-indent: 2%;
@@ -57,6 +61,7 @@ header{
 #header-inner{
     max-width: 1200px;
     margin: 0 auto;
+    align-content: center;
 }
 
 #logo{
@@ -89,7 +94,7 @@ nav ul li{
     display: inline-block;
     padding: 10px;
     float: left;
-    font-family: "Algegreya San", sans-serif;
+    font-family: 'Alegreya San', sans-serif;
 }
 nav ul li a{
     color: #F5f5f5;
@@ -101,5 +106,193 @@ nav ul li a:hover{
 .current{
     color: #c3d7df;
 }
+/** End of Navigation style ***/
+.banner{
+    width: 100%;
+    background-color: #6991ac;
+}
+.banner-inner{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.one-fourth{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+#html{
+    background-color: #f1aa90;
+}
+#css{
+    background-color: #beb9ad;
+}
+#seo{
+    background-color: #aadcd2;
+}
+#social{
+    background-color: #a2b2c1;
+}
+.one-fourth i{
+    font-size: 300%;
+    color: #f0f0f0;
+    padding: 13% 0 4px 0;
+}
+.inner-wrapper{
+    height: auto;
+    width: 100%;
+    background: #c3d7df;
+    float: left;
+}
+article{
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+    height: auto;
+}
+aside{
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+    height: auto;
+}
+#tablet{
+    background-color: #c3d7df;
+}
+#tablet2{
+    background-color: #a2b2c1;
+}
+.inner-wrapper-2{
+    float: left;
+    width: 100%;
+    background-color: #c3d7df;
+}
+.inner-wrapper-3{
+    float: left;
+    width: 100%;
+    background-color: #aadcd2;
+}
+#mobile{
+    background-color: #beb9ad;
+}
+#desktop{
+    background-color: #f1aa90;
+}
+.one-third{
+    width: 33.333333%;
+    float: left;
+    text-align: center;
+}
+#google{
+    background-color: #a2b2c1;
+}
+#marketing{
+    background-color: #beb9ad;
+}
+#customer{
+    background-color: #aadcd2;
+}
+#smiley{
+    background-color: #99dcd2;
+    padding: 0 0 1%;
+    clear: both;
+}
+/***** End of the Section styling ****/
+.footer{
+    background-color: #6991ac;
+    width: 100%;
+}
+.social{
+    list-style-type: none;
+    text-align: center;
+}
+.social li{
+    display: inline;
+}
+.social i{
+    font-size: 300%;
+    margin: 1%;
+    padding: 5%;
+    color: #c3d7df;
+}
+.social i:hover{
+    color: #F5F5F5;
+}
+footer.second{
+    border-top: 2px solid #aadcd2;
+    background-color: #544b59;
+    max-height: 50px;
+    margin: 0;
+}
+footer.second p{
+    padding: 5px 0 9px 0;
+    text-align: center;
+}
 
 
+/***** The media query are now starting *****/
+@media screen and (max-width: 768px){
+    h2{
+        font-size: 150%;
+    }
+    h3{
+        font-size: 125%;
+    }
+    p{
+        font-size: 120%;
+    }
+    header{
+        position: absolute;
+    }
+    #logo{
+        margin: 15px 0 20px 0;
+        background: url(img/RD_mobile.png) no-repeat center;
+    }
+    #menu-icon{
+        display: inline-block;
+    }
+    nav ul, nav:active ul{
+        position: absolute;
+        z-index: 1000;
+        display: none;
+        padding: 20px;
+        background: #6991ac;
+        right: 20px;
+        top: 60px;
+        border: 1px solid #fff;
+        border-radius: 5px 0 5px 5px;
+        width: 50%;
+    }
+    nav:hover ul{
+        display: block;
+    }
+    nav li{
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .banner{
+        padding-top: 86px;
+    }
+    .one-fourth{
+        width: 100%;
+    }
+    .one-fourth i{
+        font-size: 350%;
+        padding: 4% 0 1% 0;
+    }
+    article{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    .hand-mobile{
+        display: none;
+    }
+    .one-third{
+        width: 100%;
+    }
+    .social i{
+        font-size: 180%;
+    }
+}
